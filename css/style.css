@@ -906,8 +906,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 0.5px;
 }
 
-#schedule .schedule-item.schedule-break {
-  background-color: #e8f5e9;
+#schedule .schedule-item.schedule-break,
+#schedule .schedule-item.schedule-break:hover {
+  background-color: #e8f5e9 !important;
 }
 
 #schedule .schedule-item.schedule-break h4 {
@@ -915,8 +916,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
-#schedule .schedule-item.schedule-lunch {
-  background-color: #e0f2f1;
+#schedule .schedule-item.schedule-lunch,
+#schedule .schedule-item.schedule-lunch:hover {
+  background-color: #e0f2f1 !important;
 }
 
 #schedule .schedule-item.schedule-lunch h4 {
