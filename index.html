@@ -479,7 +479,7 @@
                     <div class="validation"></div>
                   </div>
 
-                  <div id="abstractFields" style="display:none;">
+                  <div id="abstractFields" class="row" style="display:none; width:100%; padding:0 15px;">
                     <div class="form-group col-12">
                       <label for="entry.1677863487" class="form-label">Poster Title <span class="text-danger">*</span></label>
                       <input type="text" class="form-control" name="entry.1677863487" id="entry.1677863487" placeholder="Title of your poster">
@@ -534,7 +534,8 @@
                 var selection = document.getElementById('entry.1369898152').value;
                 var abstractFields = document.getElementById('abstractFields');
                 if (selection === 'Yes') {
-                  abstractFields.style.display = 'block';
+                  abstractFields.style.display = 'flex';
+                  abstractFields.style.flexWrap = 'wrap';
                 } else {
                   abstractFields.style.display = 'none';
                 }
