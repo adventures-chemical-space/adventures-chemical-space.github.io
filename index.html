@@ -409,7 +409,7 @@
     ============================-->
     <section id="registration" class="section-with-bg wow fadeInUp">
       <div class="section-header">
-        <h2>Registration</h2>
+        <h2>Registration & Abstract Submission</h2>
       </div>
       <div class="row">
         <div class="col-12 col-md-6 bsb-tpl-bg-lotion">
@@ -433,50 +433,78 @@
               <div id="errorregistration"></div>
               <form role="form" class="registrationForm" id="registration-form">
                 <div class="row gy-3 gy-md-4 overflow-hidden">
-                  <div class="form-group col-2">
-                    <label for="entry.337256935" class="form-label">Title <span class="text-danger">*</span></label><br>
-                    <select class="form-select" aria-label="Default select example" id="entry.337256935" name="entry.337256935" disabled>
-                      <option selected>--</option>
+                  <div class="form-group col-3">
+                    <label for="entry.901870168" class="form-label">Title <span class="text-danger">*</span></label><br>
+                    <select class="form-select" aria-label="Default select example" id="entry.901870168" name="entry.901870168" data-rule="required" disabled>
+                      <option value="" selected>--</option>
                       <option value="Dr.">Dr.</option>
                       <option value="Prof.">Prof.</option>
+                      <option value="PhD student">PhD student</option>
                     </select>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-4">
+                    <label for="entry.601693521" class="form-label">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="entry.601693521" id="entry.601693521" placeholder="First Name" data-rule="required" disabled>
+                    <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-5">
-                    <label for="entry.56939633" class="form-label">First Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" name="entry.56939633" id="entry.56939633" placeholder="First Name" disabled>
-                  </div>
-                  <div class="form-group col-lg-5">
-                    <label for="entry.251230196" class="form-label">Last Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" name="entry.251230196" id="entry.251230196" placeholder="Last Name" disabled>
+                    <label for="entry.601450349" class="form-label">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="entry.601450349" id="entry.601450349" placeholder="Last Name" data-rule="required" disabled>
+                    <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <label for="entry.305733680" class="form-label">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="entry.305733680" id="entry.305733680" placeholder="name@example.com" disabled>
+                    <label for="entry.684002497" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" name="entry.684002497" id="entry.684002497" placeholder="name@example.com" data-rule="email" disabled>
+                    <div class="validation"></div>
                   </div>
-                  <div class="form-group col-12">
-                    <label for="entry.408034929" class="form-label">Affiliation <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" name="entry.408034929" id="entry.408034929" value="" disabled>
+                  <div class="form-group col-lg-6">
+                    <label for="entry.1154309787" class="form-label">Affiliation <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="entry.1154309787" id="entry.1154309787" placeholder="Your Institution" data-rule="required" disabled>
+                    <div class="validation"></div>
                   </div>
+
                   <div class="form-group col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="No" name="entry.685375751" id="entry.685375751" 
-                             onclick="this.value = this.checked ? 'Yes' : 'No'" disabled>
-                      <label class="form-check-label" for="entry.685375751">
-                        I would like to apply for a contributed talk
-                      </label>
+                    <hr>
+                    <h5>Poster Abstract Submission (Optional)</h5>
+                  </div>
+
+                  <div class="form-group col-12">
+                    <label for="entry.1369898152" class="form-label">I would like to submit a poster abstract <span class="text-danger">*</span></label><br>
+                    <select class="form-select" id="entry.1369898152" name="entry.1369898152" onchange="toggleAbstractFields()" data-rule="required" disabled>
+                      <option value="" selected>Select an option</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                    <div class="validation"></div>
+                  </div>
+
+                  <div id="abstractFields" style="display:none;">
+                    <div class="form-group col-12">
+                      <label for="entry.1677863487" class="form-label">Poster Title <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" name="entry.1677863487" id="entry.1677863487" placeholder="Title of your poster" disabled>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="entry.263015826" class="form-label">Authors and Affiliations <span class="text-danger">*</span></label>
+                      <textarea class="form-control" name="entry.263015826" id="entry.263015826" rows="2" placeholder="List all authors with affiliations in order, separated by semicolons" disabled></textarea>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="entry.999605422" class="form-label">Abstract <span class="text-danger">*</span> <small>(Max 250 words)</small></label>
+                      <textarea class="form-control" name="entry.999605422" id="entry.999605422" rows="6" placeholder="Your abstract text" disabled></textarea>
+                      <small class="form-text text-muted">Word count: <span id="wordCount">0</span>/250</small>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="entry.1855612592" class="form-label">References <small>(Optional)</small></label>
+                      <textarea class="form-control" name="entry.1855612592" id="entry.1855612592" rows="3" placeholder="References if needed" disabled></textarea>
                     </div>
                   </div>
+
                   <div class="form-group col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="No" name="entry.59026811" id="entry.59026811" onclick="this.value = this.checked ? 'Yes' : 'No'" disabled>
-                      <label class="form-check-label" for="entry.59026811">
-                        I would like to apply for a poster</a>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" name="iAgree" id="iAgree" disabled>
+                      <input class="form-check-input" type="checkbox" value="" name="iAgree" id="iAgree" required disabled>
                       <label class="form-check-label text-secondary" for="iAgree">
                         I agree to the <a href="terms.html" class="link-primary text-decoration-none">terms and conditions</a>
                       </label>
@@ -485,11 +513,40 @@
                   <div class="form-group col-12">
                     <br>
                     <div class="d-grid">
-                      <button class="btn bsb-btn-xl btn-primary" type="submit" disabled>Sign up</button>
+                      <button class="btn bsb-btn-xl btn-primary" type="submit" disabled>Submit Registration</button>
                     </div>
                   </div>
                 </div>
               </form>
+
+              <script>
+              function toggleAbstractFields() {
+                var selection = document.getElementById('entry.1369898152').value;
+                var abstractFields = document.getElementById('abstractFields');
+                if (selection === 'Yes') {
+                  abstractFields.style.display = 'block';
+                } else {
+                  abstractFields.style.display = 'none';
+                }
+              }
+
+              // Word counter for abstract
+              document.addEventListener('DOMContentLoaded', function() {
+                var abstractField = document.getElementById('entry.999605422');
+                if (abstractField) {
+                  abstractField.addEventListener('input', function() {
+                    var text = this.value.trim();
+                    var wordCount = text === '' ? 0 : text.split(/\s+/).length;
+                    document.getElementById('wordCount').textContent = wordCount;
+                    if (wordCount > 250) {
+                      document.getElementById('wordCount').style.color = 'red';
+                    } else {
+                      document.getElementById('wordCount').style.color = 'inherit';
+                    }
+                  });
+                }
+              });
+              </script>
             </div>
           </div>
         </div>
@@ -542,20 +599,20 @@
           <form role="form" class="contactForm" id="contact-form">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="entry.1901914554" class="form-control" id="entry.1901914554" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="entry.1762040339" class="form-control" id="entry.1762040339" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="entry.476096749" id="entry.476096749" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="entry.1785709463" id="entry.1785709463" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="entry.1018230026" id="entry.1018230026" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="entry.1465594310" id="entry.1465594310" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="entry.1168049081" id="entry.1168049081" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="entry.1237260753" id="entry.1237260753" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
             <div class="form-check">

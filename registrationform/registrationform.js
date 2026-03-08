@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     
     var formData = $(this).serialize();
     // console.log(formData)
-    var googleFormURL = ""; // TODO: Replace with new Adventures in Chemical Space Google Form URL
+    var googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSdHyr7objhbpj5pTb6WcTnIqdrx7CQ6gdluTnLR3xLow4u4uQ/formResponse?";
     const container = document.getElementById("registerContainer");
     const iframe = document.createElement("iframe");
     iframe.src = googleFormURL+formData + "&susubmit=Submit";
