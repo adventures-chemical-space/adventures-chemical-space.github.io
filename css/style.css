@@ -889,6 +889,55 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#schedule .schedule-session-header {
+  background-color: #0e1b4d;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+#schedule .schedule-session-header h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#schedule .schedule-item.schedule-break {
+  background-color: #e8f5e9;
+}
+
+#schedule .schedule-item.schedule-break h4 {
+  color: #27ae60;
+  font-style: italic;
+}
+
+#schedule .schedule-item.schedule-lunch {
+  background-color: #e0f2f1;
+}
+
+#schedule .schedule-item.schedule-lunch h4 {
+  color: #16a085;
+  font-style: italic;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item p {
+  font-size: 14px;
+  color: #e74c3c;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
