@@ -926,6 +926,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
+#schedule .schedule-item.schedule-social,
+#schedule .schedule-item.schedule-social:hover {
+  background-color: #fbe9e7 !important;
+}
+
+#schedule .schedule-item.schedule-social h4 {
+  color: #c0392b;
+  font-style: italic;
+}
+
 #schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
