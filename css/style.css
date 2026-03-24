@@ -708,6 +708,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
+#speakers .speaker img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+}
+
 #speakers .speaker .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
