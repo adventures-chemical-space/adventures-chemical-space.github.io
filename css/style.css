@@ -710,9 +710,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers .speaker img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
-  object-position: top;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  background: #f6f6f6;
 }
 
 #speakers .speaker .details {
@@ -758,6 +759,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers-details {
   padding: 60px 0;
+}
+
+.speakers-details .col-md-6 img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
 }
 
 #speakers-details .details h2 {
