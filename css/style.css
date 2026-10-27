@@ -824,7 +824,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule .nav-tabs li {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 #schedule .nav-tabs a {
@@ -833,7 +833,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
-  padding: 10px 100px;
+  padding: 10px 50px;
 }
 
 #schedule .nav-tabs a.active {
@@ -1847,7 +1847,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #schedule .nav-tabs a {
-    padding: 8px 60px;
+    padding: 8px 20px;
   }
 }
 
@@ -1867,7 +1867,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
-    padding: 8px 50px;
+    padding: 8px 40px;
   }
 }
 
