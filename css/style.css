@@ -921,11 +921,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 0.5px;
 }
 
+#schedule .schedule-session-header.has-chair {
+  padding: 8px 20px 7px 20px;
+}
+
 #schedule .schedule-session-header .session-chair {
-  color: #fff;
-  font-size: 15px;
+  color: #fff !important;
+  font-size: 14px;
   font-style: italic;
-  margin: 4px 0 0 0;
+  line-height: 1.2;
+  margin: 2px 0 0 0;
 }
 
 #schedule .schedule-item.schedule-break,
