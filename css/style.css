@@ -921,6 +921,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 0.5px;
 }
 
+#schedule .schedule-session-header .session-chair {
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  margin: 4px 0 0 0;
+}
+
 #schedule .schedule-item.schedule-break,
 #schedule .schedule-item.schedule-break:hover {
   background-color: #e8f5e9 !important;
